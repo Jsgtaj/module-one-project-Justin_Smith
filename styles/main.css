@@ -1,0 +1,129 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  /*type selector*/
+  font-family: "Inter", sans-serif;
+}
+body {
+  /*type selector*/
+  background-image: url(../img/wavebg.jpg);
+}
+h2 abbr {
+  /*decendant combinator*/
+  color: #348644;
+}
+abbr {
+  /*type selector*/
+  color: #be2350;
+}
+h3,
+p,
+a {
+  /*type selectors*/
+  color: #222222;
+}
+p,
+footer {
+  /*type selectors*/
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+a {
+  /*type selector*/
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 2px #be2350;
+  font-weight: 600;
+}
+a:hover {
+  /*pseudo class*/
+  background-color: #222222;
+  color: #348644;
+}
+
+h3 ~ p,
+footer {
+  /*general sibling combinator, type selector*/
+  font-style: normal;
+  font-size: 18px;
+}
+h3 {
+  /*type selector*/
+  padding-left: 10px;
+  font-size: 22px;
+}
+.page-wrapper {
+  /*class selector*/
+  width: 90%;
+  margin: auto;
+}
+
+.page-wrapper > section:nth-child(2) > section:first-of-type,
+.page-wrapper > section:nth-child(1) > section {
+  /*class selector, child combinator, pseudo class*/
+  width: 70%;
+  text-align: left;
+}
+.intro > header {
+  /*child combinator*/
+  text-align: center;
+  color: #dedede;
+  background-color: #be2350;
+  padding: 50px 0px 50px 0px;
+}
+.page-wrapper {
+  /*class selector*/
+  background-color: #dedede;
+}
+header[role="banner"] h1,
+header[role="banner"] h2 {
+  /* attribute selector*/
+  padding: 0%;
+  margin: 0em;
+  font-size: 60px;
+  background-image: url(../img/lotus.png);
+  background-size: contain;
+  background-position: center;
+}
+header[role="banner"] h2 {
+  /* attribute selector*/
+  font-size: 20px;
+  font-style: italic;
+}
+section > section {
+  /* child combinator*/
+  border-top: solid 5px #be2350;
+}
+header[role="banner"] + section:first-of-type {
+  /* attribute selector, direct sibling combinator, pseudo class selector*/
+  border-top: solid 0px #be2350;
+}
+aside {
+  /*type selector*/
+
+  background-color: #318642;
+  position: absolute;
+  top: 191px;
+  right: 5%;
+  width: 26%;
+}
+ul li {
+  /*decendant combinator*/
+
+  line-height: 1.5em;
+  margin-left: -20px;
+  list-style: none;
+}
+aside h3 {
+  /*decendant combinator*/
+  padding-left: 10px;
+}
+#zen-requirements > p:last-of-type,
+footer {
+  /*id selector, child combinator, pseudo class, type selector*/
+  margin-block-end: 0em;
+  background-color: #318642;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
